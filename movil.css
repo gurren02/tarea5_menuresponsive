@@ -1,0 +1,78 @@
+@media(max-width:480px) {
+    i.icono_menu {
+        display: inline-block;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        margin-top: 15px;
+        background-color: var(--gris_menu);
+        padding: 15px 20px;
+        border-radius: 4px;
+    }
+
+    .contenedor_menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        width: 100%;
+    }
+
+    .contenedor_menu li {
+        width: 100%;
+        border-bottom: 1px dotted var(--negro);
+    }
+
+    .enlace_menu {
+        display: block;
+        padding: 12px 0;
+        text-align: left;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .banner_principal {
+        min-height: 380px;
+    }
+
+    .texto_banner {
+        padding-inline: 15px;
+    }
+
+    .texto_banner h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .seccion_servicios {
+        padding-block: 40px;
+    }
+
+    .encabezado_servicios {
+        margin-bottom: 35px;
+    }
+
+    .encabezado_servicios h2 {
+        font-size: 28px;
+    }
+
+    .subtitulo_verde {
+        font-size: 18px;
+    }
+
+    .contenedor_tarjetas {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .tarjeta_servicio {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .logotipo_pie {
+        max-width: 220px;
+    }
+}
+

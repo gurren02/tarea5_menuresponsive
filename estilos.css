@@ -1,0 +1,200 @@
+/*Tipografias*/
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&display=swap');
+
+/*Variables*/
+:root {
+    --verde: #6cb500;
+    --gris: #f3f3f3;
+    --gris_menu: #f3f3f3;
+    --negro: #333333;
+    --blanco: #ffffff;
+    --tipografia_1: "Arimo", sans-serif;
+    --grueso: 700;
+    --medio: 500;
+    --regular: 400;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--tipografia_1);
+    color: var(--negro);
+    font-weight: var(--regular);
+    background-color: var(--blanco);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.margen {
+    padding: 15px;
+}
+
+.ancho {
+    max-width: 1200px;
+    margin-inline: auto;
+    width: 100%;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-block: 25px;
+    background-color: var(--blanco);
+}
+
+.logotipo {
+    max-width: 240px;
+}
+
+.logotipo img {
+    width: 100%;
+    display: block;
+}
+
+i.icono_menu {
+    display: none;
+    font-size: 32px;
+    color: var(--verde);
+    cursor: pointer;
+}
+
+.contenedor_menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.enlace_menu {
+    text-decoration: none;
+    color: var(--negro);
+    font-size: 16px;
+    font-weight: var(--regular);
+    transition: all 0.3s linear;
+}
+
+.enlace_menu:hover {
+    color: var(--verde);
+}
+
+.banner_principal {
+    position: relative;
+    width: 100%;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    background-image: url('imagenes/foto_slide.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.texto_banner {
+    width: 100%;
+    padding-inline: 40px;
+}
+
+.texto_banner h1 {
+    color: var(--blanco);
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: var(--medio);
+    max-width: 650px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.seccion_servicios {
+    padding-block: 60px;
+}
+
+.encabezado_servicios {
+    margin-bottom: 50px;
+}
+
+.encabezado_servicios h2 {
+    font-size: 36px;
+    font-weight: var(--medio);
+    color: var(--negro);
+    margin-bottom: 8px;
+}
+
+.subtitulo_verde {
+    color: var(--verde);
+    font-size: 22px;
+    font-weight: var(--medio);
+}
+
+.contenedor_tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.tarjeta_servicio {
+    flex: 1;
+    background-color: var(--gris);
+    border-radius: 12px;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s linear;
+}
+
+.icono_tarjeta {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.icono_tarjeta img {
+    max-height: 80px;
+    max-width: 100px;
+    display: block;
+    object-fit: contain;
+}
+
+.tarjeta_servicio h3 {
+    color: var(--verde);
+    font-size: 20px;
+    font-weight: var(--medio);
+    margin-bottom: 20px;
+}
+
+.tarjeta_servicio p {
+    color: var(--negro);
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.footer {
+    background-color: var(--verde);
+    padding: 40px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logotipo_pie {
+    max-width: 260px;
+}
+
+.logotipo_pie img {
+    width: 100%;
+    display: block;
+}
